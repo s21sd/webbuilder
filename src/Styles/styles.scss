@@ -1,0 +1,290 @@
+$primary_Color: #212731;
+$secondary_Color: #ffffff;
+$links_Color: #D1D6DA;
+$br_Color: #E1E4E6;
+
+.App {
+    background-color: #FBFCFD;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1592px;
+    height: 64px;
+    background-color: $primary_Color;
+}
+
+.inputbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $secondary_Color;
+    padding: 2px;
+    border-radius: 8px;
+    border: 1px;
+}
+
+input {
+    width: 258px;
+    height: 37px;
+    top: 14px;
+    left: 480px;
+    border-radius: 8px;
+    border: 1px;
+
+}
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 26px;
+}
+
+.tags p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $links_Color;
+}
+
+.second {
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.info_components {
+    width: 1024px;
+    height: 155px;
+    top: 64px;
+    left: 284px;
+
+}
+
+.info_components h1 {
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    color: #2C384A;
+
+}
+
+.br_line {
+    width: 1024px;
+    height: 1.33px;
+    top: 173.67px;
+    left: 284px;
+    background: $br_Color;
+
+}
+
+.search_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    color: #4B5665;
+
+}
+
+.search_info_first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4B5665;
+    gap: 2em;
+}
+
+.tools {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    gap: 32px;
+}
+
+.tools div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: 36px;
+    top: 235px;
+    left: 284px;
+    border-radius: 12px;
+    color: #4B5665;
+    background-color: $secondary_Color;
+}
+
+.hostings {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.hostings div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5C6874;
+
+}
+
+.choiseCard {
+    width: 1024px;
+    height: 290px;
+    border-radius: 12px;
+    margin: 20px;
+    
+    background-color: $secondary_Color;
+
+}
+
+.card {
+    margin-top: 32px;
+}
+
+.choiseCard_main {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+}
+
+.trophy {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 40px;
+    left: 12px;
+    width: 136px;
+    height: 34px;
+    color: $secondary_Color;
+    border-radius: 0px 12px 12px 0px;
+    background: #FF7724;
+
+}
+
+.id {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    width: 44px;
+    height: 44px;
+    top: 379px;
+    left: 262px;
+    border-radius: 9999px;
+
+}
+
+.choiseCard_main_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+.choiseCard_main_img img {
+    width: 141px;
+    height: 103px;
+    top: 422px;
+    left: 326px;
+
+}
+
+.choiseCard_main_content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+
+.choiseCard_main_content p {
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.choiseCard_main_content span {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.show_more_div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1B88F4;
+    gap: 2px;
+
+
+}
+
+
+.choiseCard_main_actions {
+    width: 250px;
+    flex-shrink: 0;
+    display: grid;
+    justify-content: center;
+
+
+}
+
+.choiseCard_main_actions_one {
+    width: 135px;
+    height: 118px;
+    padding: 12px;
+    margin-left: 38px;
+    border-radius: 0px 0px 12px 12px;
+    background: #F3F9FF;
+
+}
+
+.choiseCard_main_actions button {
+    border: none;
+    width: 232px;
+    height: 48px;
+    top: 537px;
+    left: 1051px;
+    border-radius: 12px;
+    background: #1B88F4;
+
+
+}
