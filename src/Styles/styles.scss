@@ -55,17 +55,19 @@ input {
 }
 
 .second {
-    display: grid;
-    justify-content: center;
-    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 
 }
 
 .info_components {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     width: 1024px;
     height: 155px;
-    top: 64px;
-    left: 284px;
+
 
 }
 
@@ -82,8 +84,7 @@ input {
 .br_line {
     width: 1024px;
     height: 1.33px;
-    top: 173.67px;
-    left: 284px;
+    border: 1px solid #E1E4E6;
     background: $br_Color;
 
 }
@@ -163,6 +164,16 @@ input {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 72px;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     margin-top: 32px;
 }
 
@@ -204,6 +215,8 @@ input {
 
 .choiseCard_main_img {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: auto;
     width: 250px;
 }
@@ -211,6 +224,19 @@ input {
 .choiseCard_main_img img {
     width: 141px;
     height: 103px;
+
+}
+
+.choiseCard_main_img p {
+    margin-left: 52px;
+    margin-top: 12px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+
+    color: #626E79;
 
 }
 
@@ -333,5 +359,185 @@ input {
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
+
+}
+
+.footer_main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1592px;
+    height: 452px;
+    background: #212731;
+}
+
+.footer_main p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $links_Color;
+
+}
+
+.footer_main h1 {
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $links_Color;
+}
+
+.state {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.headings1 {
+    margin-left: 192px;
+}
+
+.cardscomponet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.cardscomp {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    width: 333px;
+    height: 425px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: $secondary_Color;
+
+}
+
+.cardscomp img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 141px;
+    height: 103px;
+    padding: 32px;
+
+}
+
+.cards_comp_ratings {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 4px;
+}
+
+.cards_comp_ratings div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 69px;
+    height: 28px;
+    border-radius: 8px;
+    color: #074786;
+    background-color: #F2F4F7;
+
+
+}
+
+.cards_comp_money {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+
+
+}
+
+.cards_comp_heading h1 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #626E79;
+
+}
+
+
+.cards_comp_current_money {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5C6874;
+
+
+}
+
+.cards_comp_initial_money {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9FA9B3;
+
+}
+
+.cards_comp_offPercentage {
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #EF4C5D;
+
+
+}
+
+.btndiv {
+    display: flex;
+    margin: auto;
+}
+
+.cardscomp button {
+    border: none;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: auto;
+    width: 292px;
+    height: 48px;
+    top: 2163px;
+    left: 320px;
+    border-radius: 12px;
+    background: #1B88F4;
+    color: $secondary_Color;
+
 
 }

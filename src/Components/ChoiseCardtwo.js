@@ -1,11 +1,11 @@
 import React from 'react'
-import newData from '../Third_Comp_data'
-import { CheckCircle2,  ChevronDown, Star, Trophy } from 'lucide-react'
+import newData from '../Fourth_Comp_data'
+import { CheckCircle2, ChevronDown, Star, Trophy } from 'lucide-react'
 import productimg from '../assests/download.png'
 
 const ChoiseCardtwo = () => {
     return (
-        <div className='card'>
+        <div className='card1'>
             {
                 newData.map((items) => {
                     return (
@@ -41,10 +41,7 @@ const ChoiseCardtwo = () => {
 
                                         <div className='show_more_div'>
                                             <p>Show more </p>
-                                            <ChevronDown size={18} style={{
-                                                marginTop: '4px',
 
-                                            }} color='#1B88F4' />
                                         </div>
 
                                     </div>

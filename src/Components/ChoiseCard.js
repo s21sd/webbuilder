@@ -1,6 +1,6 @@
 import React from 'react'
 import data from '../Third_Comp_data'
-import { ChevronDown, Star, Trophy } from 'lucide-react'
+import { ChevronDown, Star, StarHalf, StarOff, Trophy } from 'lucide-react'
 import productimg from '../assests/download.png'
 const ChoiseCard = () => {
     return (
@@ -30,6 +30,11 @@ const ChoiseCard = () => {
                                     }} className='id'>{items.id}</p>
                                     <div className='choiseCard_main_img'>
                                         <img src={productimg} alt="product_img" />
+
+                                        {
+                                            items.id === 1 || items.id == 3 ? <p>Biulder 1</p> : <p>Biulder</p>
+                                        }
+
                                     </div>
 
                                     <div className="choiseCard_main_content">
@@ -63,7 +68,7 @@ const ChoiseCard = () => {
                                             </p>
                                             <p>{items.type}</p>
                                             <div>
-                                                <Star />
+                                                <Star color='yellow' />
                                                 <Star />
                                                 <Star />
                                                 <Star />
