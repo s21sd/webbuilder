@@ -9,17 +9,25 @@ const ChoiseCard = () => {
             {
                 data.map((items) => {
                     return (
-                        <div>
-                            <div className='trophy'>
-                                <Trophy />
-                                <p>Best Choise</p>
 
-                            </div>
+                        <div>
+                            {
+                                items.id == 1 || items.id == 2 ?
+                                    <div className='trophy'>
+                                        <Trophy />
+                                        <p>Best Choise</p>
+
+                                    </div> : <></>
+
+
+                            }
 
                             <div className='choiseCard' key={items.id}>
 
                                 <div className='choiseCard_main'>
-                                    <p className='id'>{items.id}</p>
+                                    <p style={{
+                                        border: items.id == 1 ? 'none' : ''
+                                    }} className='id'>{items.id}</p>
                                     <div className='choiseCard_main_img'>
                                         <img src={productimg} alt="product_img" />
                                     </div>
@@ -72,7 +80,7 @@ const ChoiseCard = () => {
                     )
                 })
             }
-        </div >
+        </div>
     )
 }
 

@@ -154,10 +154,10 @@ input {
 
 .choiseCard {
     width: 1024px;
-    height: 290px;
+    height: 300px;
     border-radius: 12px;
     margin: 20px;
-    
+
     background-color: $secondary_Color;
 
 }
@@ -189,29 +189,28 @@ input {
 
 .id {
     display: flex;
+    position: relative;
+    top: 16px;
+    left: -22px;
     justify-content: center;
     align-items: center;
     border: 1px solid gray;
     width: 44px;
     height: 44px;
-    top: 379px;
-    left: 262px;
     border-radius: 9999px;
+    background-color: $secondary_Color;
 
 }
 
 .choiseCard_main_img {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
     width: 250px;
 }
 
 .choiseCard_main_img img {
     width: 141px;
     height: 103px;
-    top: 422px;
-    left: 326px;
 
 }
 
@@ -286,5 +285,53 @@ input {
     border-radius: 12px;
     background: #1B88F4;
 
+
+}
+
+.choiseCard2 {
+    width: 1024px;
+    height: 500px;
+    padding: 22px;
+    border-radius: 12px;
+    background-color: $secondary_Color;
+}
+
+.choiseCard_main_desc_two {
+    width: 505px;
+    height: 116px;
+    padding: 8px;
+    border-radius: 12px;
+    gap: 5px;
+    background: #FFF4ED;
+
+}
+
+.choiseCard_main_desc_two p {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 6px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.choiseCard_main_desc_two span {
+    width: 40px;
+    margin: 6px;
+    padding: 7px;
+    gap: 5px;
+    border-radius: 4px;
+    background: #FFFFFF;
+}
+
+.choiseCard_main_desc_three p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
 
 }

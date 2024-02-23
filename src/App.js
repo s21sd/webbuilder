@@ -2,6 +2,7 @@ import './Styles/styles.css'
 import Navbar from './Components/Navbar';
 import { InfoComp } from './Components/Info';
 import ChoiseCard from './Components/ChoiseCard';
+import ChoiseCardtwo from './Components/ChoiseCardtwo';
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <Navbar />
       <div className='second'>
         {/* <InfoComp /> */}
-        <ChoiseCard />
+        {/* <ChoiseCard /> */}
+        <ChoiseCardtwo />
       </div>
     </div>
   );
