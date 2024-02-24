@@ -2,7 +2,8 @@ import React from 'react'
 import newData from '../Fourth_Comp_data'
 import { CheckCircle2, ChevronDown, Star, Trophy } from 'lucide-react'
 import productimg from '../assests/download.png'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar, faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
 const ChoiseCardtwo = () => {
     return (
         <div className='card1'>
@@ -13,9 +14,10 @@ const ChoiseCardtwo = () => {
                         <div className='choiseCard2' key={items.id}>
 
                             <div className='choiseCard_main'>
-                                <p className='id'>{items.id}</p>
+                                <p className='id2'>{items.id}</p>
                                 <div className='choiseCard_main_img'>
                                     <img src={productimg} alt="product_img" />
+                                    <p>CDK</p>
                                 </div>
 
                                 <div className="choiseCard_main_content">
@@ -49,17 +51,18 @@ const ChoiseCardtwo = () => {
 
                                 <div className="choiseCard_main_actions">
                                     <div className='choiseCard_main_actions_one'>
-                                        <p>
+                                        <p className='p1'>
                                             {items.rating}
                                         </p>
 
                                         <p>{items.type}</p>
-                                        <div>
-                                            <Star />
-                                            <Star />
-                                            <Star />
-                                            <Star />
-                                            <Star />
+                                        <div className='starrating'>
+                                            <FontAwesomeIcon color='#FFB80F' icon={faStar} />
+                                            <FontAwesomeIcon color='#FFB80F' icon={faStar} />
+                                            <FontAwesomeIcon color='#FFB80F' icon={faStar} />
+                                            <FontAwesomeIcon color='#FFB80F' icon={faStar} />
+                                            <FontAwesomeIcon color='#FFB80F' icon={faStarHalfStroke} />
+
                                         </div>
                                     </div>
                                     <div>

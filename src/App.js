@@ -5,6 +5,7 @@ import ChoiseCard from './Components/ChoiseCard';
 import ChoiseCardtwo from './Components/ChoiseCardtwo';
 import Footer from './Components/Footer';
 import CardsComponet from './Components/CardsComponet';
+import Signup from './Components/Signup';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <ChoiseCard />
         <ChoiseCardtwo />
         <CardsComponet />
+        <Signup />
         <Footer />
 
       </div>

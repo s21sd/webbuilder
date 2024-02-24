@@ -213,6 +213,21 @@ input {
 
 }
 
+.id2 {
+    display: flex;
+    position: relative;
+    top: 16px;
+    left: -35px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    width: 56px;
+    height: 43px;
+    border-radius: 9999px;
+    background-color: $secondary_Color;
+
+}
+
 .choiseCard_main_img {
     display: flex;
     flex-direction: column;
@@ -287,20 +302,35 @@ input {
     width: 250px;
     flex-shrink: 0;
     display: grid;
-    justify-content: center;
-
-
 }
 
 .choiseCard_main_actions_one {
-    width: 135px;
-    height: 118px;
-    padding: 12px;
+    width: 146px;
+    height: 140px;
     margin-left: 38px;
     border-radius: 0px 0px 12px 12px;
     background: #F3F9FF;
+    display: grid;
+    justify-content: center;
+    align-items: start;
 
 }
+
+.choiseCard_main_actions_one p {
+    text-align: center;
+    margin-bottom: 32px;
+
+
+}
+
+.p1 {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+
 
 .choiseCard_main_actions button {
     border: none;
@@ -310,7 +340,7 @@ input {
     left: 1051px;
     border-radius: 12px;
     background: #1B88F4;
-
+    color: $secondary_Color ;
 
 }
 
@@ -540,4 +570,59 @@ input {
     color: $secondary_Color;
 
 
+}
+
+.signup_component {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1024px;
+    margin: auto;
+    height: 171px;
+    padding: 12px;
+
+}
+
+.signup_component h1 {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5C6874;
+    margin-right: 12px;
+}
+
+.inputConatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_box {
+    width: 348px;
+    height: 52px;
+    background: #FFFFFF;
+}
+
+.starrating {
+    position: relative;
+    bottom: 32px;
+
+}
+
+.signup_component button {
+    width: 97px;
+    height: 52px;
+    font-family: Inter;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 0px 12px 12px 0px;
+    line-height: 20px;
+    letter-spacing: 0.699999988079071px;
+    text-align: center;
+    color: $secondary_Color;
+    background-color: #1B88F4;
 }

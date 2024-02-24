@@ -1,7 +1,9 @@
 import React from 'react'
 import data from '../Third_Comp_data'
-import { ChevronDown, Star, StarHalf, StarOff, Trophy } from 'lucide-react'
+import { ChevronDown, Info, Star, StarHalf, StarOff, Trophy } from 'lucide-react'
 import productimg from '../assests/download.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar, faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
 const ChoiseCard = () => {
     return (
         <div className='card'>
@@ -63,17 +65,35 @@ const ChoiseCard = () => {
 
                                     <div className="choiseCard_main_actions">
                                         <div className='choiseCard_main_actions_one'>
-                                            <p>
+                                            <p className='p1'>
                                                 {items.rating}
+                                                {
+                                                    items.id == 1 || items.id == 2 ? <Info color='#BABEC3' style={{
+                                                        marginLeft: 12
+                                                    }} /> : <></>
+                                                }
+
                                             </p>
                                             <p>{items.type}</p>
-                                            <div>
-                                                <Star color='yellow' />
-                                                <Star />
-                                                <Star />
-                                                <Star />
-                                                <Star />
-                                            </div>
+                                            {
+                                                items.id == 1 || items.id == 3 ?
+                                                    <div className='starrating'>
+                                                        <FontAwesomeIcon color='#FFB80F' icon={faStar} />
+                                                        <FontAwesomeIcon color='#FFB80F' icon={faStar} />
+                                                        <FontAwesomeIcon color='#FFB80F' icon={faStar} />
+                                                        <FontAwesomeIcon color='#FFB80F' icon={faStar} />
+                                                        <FontAwesomeIcon color='#FFB80F' icon={faStar} />
+
+                                                    </div> :
+                                                    <div className='starrating'>
+                                                        <FontAwesomeIcon color='#FFB80F' icon={faStar} />
+                                                        <FontAwesomeIcon color='#FFB80F' icon={faStar} />
+                                                        <FontAwesomeIcon color='#FFB80F' icon={faStar} />
+                                                        <FontAwesomeIcon color='#FFB80F' icon={faStar} />
+                                                        <FontAwesomeIcon color='#FFB80F' icon={faStarHalfStroke} />
+                                                    </div>
+                                            }
+
                                         </div>
                                         <div>
                                             <button>View</button>
@@ -85,7 +105,7 @@ const ChoiseCard = () => {
                     )
                 })
             }
-        </div>
+        </div >
     )
 }
 
