@@ -3,7 +3,7 @@ import Cards from './Cards'
 
 const CardsComponet = () => {
     return (
-        <div>
+        <div className='carscompoclass'>
             <h1 className='headings1'>Related deals you might like for</h1>
             <div className='cardscomponet'>
                 <Cards />

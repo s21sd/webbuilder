@@ -565,4 +565,97 @@ input {
   text-align: center;
   color: #ffffff;
   background-color: #1B88F4;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vh;
+  }
+  .navbar {
+    width: 1592px;
+    height: 150px;
+    font-size: 19px;
+  }
+  .tags p {
+    font-size: 25px;
+  }
+  .inputbox {
+    height: 51px;
+    padding: 15px;
+  }
+  .info_components h1 {
+    text-align: start;
+  }
+  .search_info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 22px;
+  }
+  .second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 22px;
+  }
+  .tools div {
+    height: 50px;
+    width: 200px;
+  }
+  .hostings {
+    justify-content: space-evenly;
+  }
+  .choiseCard_main {
+    margin-top: 60px;
+    font-size: 22px;
+  }
+  .choiseCard {
+    height: 370px;
+  }
+  .choiseCard_main_content p {
+    font-size: 20px;
+  }
+  .trophy {
+    top: 75px;
+    font-size: 19px;
+  }
+  .choiseCard2 {
+    height: 530px;
+  }
+  .id,
+  .id2 {
+    font-weight: bold;
+  }
+  .carscompoclass {
+    margin-top: 42px;
+    display: grid;
+    text-align: center;
+  }
+  .cardscomponet {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+  .cardscomp {
+    width: 400px;
+  }
+  .headings1 {
+    text-align: center;
+  }
+  .footer_main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 32px;
+  }
 }/*# sourceMappingURL=styles.css.map */
